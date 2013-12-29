@@ -7,6 +7,8 @@ This will be the main "controller" of which program you want to solve.  If the a
 #include <iostream>
 #include "Problem1.h"
 using namespace std;
+#include <cstdio>
+#include <ctime>
 
 
 
@@ -19,7 +21,10 @@ int main()
 	int probToSolve;
 	cin >> probToSolve;
 	
+	clock_t start;
+	double duration;
 
+	start = clock();
 	//TODO:: Add errorcatching for bad input.
 	if (probToSolve == 1){
 		Problem1 prob;
@@ -30,12 +35,13 @@ int main()
 		
 	}
 		
-		
+	duration = (clock() - start) / (double) CLOCKS_PER_SEC;
 	
 
 	
 	//Display the answer to the selected problem.
 	cout << endl << answer << endl;
+	cout << "The problem took " << duration << " seconds to solve." << endl;
 	system("pause");
 
 

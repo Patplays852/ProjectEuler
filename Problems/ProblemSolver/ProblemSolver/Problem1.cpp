@@ -36,16 +36,11 @@ int Problem1::setnum(int number)
 int Problem1::Solve(){
 	//Logic to solve the problem, we'll take all numbers from 3 to n, if divisable by 3 or 5 we'll add to a stack, then sum them up and return the value.
 	stack<int> multiples;
+	int sum = 0;
 	for (int n = 3; n < num; n++){
 		if (n % 3 == 0 || n % 5 == 0){
-			multiples.push(n);
+			sum += n;
 		}
-	}
-	//We now have a stack that contains all the multiples of 3 and 5 from 3 to n, now we will add them all together.
-	int sum = 0;
-	while (!multiples.empty()){
-		sum += multiples.top();
-		multiples.pop(); //removes the element that we just added to sum.
 	}
 	
 	return sum;
