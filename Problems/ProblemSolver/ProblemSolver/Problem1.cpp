@@ -9,15 +9,14 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 
 #include "stdafx.h"
 #include "Problem1.h"
-#include <stack>
-#include <iostream>
+#include <vector>
 using namespace std;
 
 
 Problem1::Problem1()
 {
 	//Constructor, if Problem1.setnum() isn't called, the default to solve for is 1000 (as per the problem)
-	num = 1000;
+	int num = 1000;
 }
 
 
@@ -35,7 +34,6 @@ int Problem1::setnum(int number)
 
 int Problem1::Solve(){
 	//Logic to solve the problem, we'll take all numbers from 3 to n, if divisable by 3 or 5 we'll add to a stack, then sum them up and return the value.
-	stack<int> multiples;
 	int sum = 0;
 	for (int n = 3; n < num; n++){
 		if (n % 3 == 0 || n % 5 == 0){

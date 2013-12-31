@@ -6,6 +6,7 @@ This will be the main "controller" of which program you want to solve.  If the a
 #include "stdafx.h"
 #include <iostream>
 #include "Problem1.h"
+#include "Problem2.h"
 using namespace std;
 #include <cstdio>
 #include <ctime>
@@ -16,6 +17,7 @@ int main()
 {
 	//create an int, get the input for it then find which problem it is for, create the object, do some initalization for the problem, then after the if we'll call prob.Solve() to solve the problem.
 	int answer = 0;
+
 	cout << "Welcome to the Project Euler problem solver!\n";
 	cout << "Please enter the number of the problem you'd like to solve(1 - n):";
 	int probToSolve;
@@ -32,7 +34,13 @@ int main()
 		answer = prob.Solve();
 	}
 	else if (probToSolve == 2){
-		
+		Problem2 prob;
+		prob.setMaxFib(4000000);
+		answer = prob.Solve();
+	}
+	else if (probToSolve == 3){
+
+
 	}
 		
 	duration = (clock() - start) / (double) CLOCKS_PER_SEC;
