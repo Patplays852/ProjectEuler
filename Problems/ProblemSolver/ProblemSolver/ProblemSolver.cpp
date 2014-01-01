@@ -14,6 +14,7 @@ This will be the main "controller" of which program you want to solve.  If the a
 #include "Problem5.h"
 #include "Problem6.h"
 #include "Problem8.h"
+#include "Problem9.h"
 using namespace std;
 #include <cstdio>
 #include <ctime>
@@ -69,6 +70,10 @@ int main()
 	}
 	else if (probToSolve == 8){
 		Problem8 prob;
+		answer = prob.Solve();
+	}
+	else if (probToSolve == 9){
+		Problem9 prob;
 		answer = prob.Solve();
 	}
 		
