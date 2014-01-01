@@ -2,6 +2,7 @@
 #include "Problem3.h"
 #include <iostream>
 #include "Primes.h" //for the isPrime() function
+#include <string>
 
 using namespace std;
 

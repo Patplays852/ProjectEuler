@@ -9,6 +9,7 @@ This will be the main "controller" of which program you want to solve.  If the a
 #include "Problem1.h"
 #include "Problem2.h"
 #include "Problem3.h"
+#include "Problem4.h"
 using namespace std;
 #include <cstdio>
 #include <ctime>
@@ -44,6 +45,10 @@ int main()
 	else if (probToSolve == 3){
 		Problem3 prob;
 		prob.factors(600851475143);
+	}
+	else if (probToSolve == 4){
+		Problem4 prob;
+		answer = prob.Solve();
 	}
 		
 	duration = (clock() - start) / (double) CLOCKS_PER_SEC;
