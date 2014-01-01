@@ -6,11 +6,13 @@ This will be the main "controller" of which program you want to solve.  If the a
 #include "stdafx.h"
 #include <iostream>
 
+#include "Primes.h"
 #include "Problem1.h"
 #include "Problem2.h"
 #include "Problem3.h"
 #include "Problem4.h"
 #include "Problem5.h"
+#include "Problem6.h"
 using namespace std;
 #include <cstdio>
 #include <ctime>
@@ -54,6 +56,15 @@ int main()
 	else if (probToSolve == 5){
 		Problem5 prob;
 		answer = prob.Solve();
+	}
+	else if (probToSolve == 6){
+		Problem6 prob;
+		answer = prob.Solve();
+	}
+	else if (probToSolve == 7){
+		Primes prob;
+		vector<unsigned _int64> p = prob.primeList(1000000);
+		answer = p.at(10000);
 	}
 		
 	duration = (clock() - start) / (double) CLOCKS_PER_SEC;
