@@ -13,6 +13,7 @@ This will be the main "controller" of which program you want to solve.  If the a
 #include "Problem4.h"
 #include "Problem5.h"
 #include "Problem6.h"
+#include "Problem8.h"
 using namespace std;
 #include <cstdio>
 #include <ctime>
@@ -65,6 +66,10 @@ int main()
 		Primes prob;
 		vector<unsigned _int64> p = prob.primeList(1000000);
 		answer = p.at(10000);
+	}
+	else if (probToSolve == 8){
+		Problem8 prob;
+		answer = prob.Solve();
 	}
 		
 	duration = (clock() - start) / (double) CLOCKS_PER_SEC;
