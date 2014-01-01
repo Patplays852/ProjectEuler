@@ -5,7 +5,6 @@ This will be the main "controller" of which program you want to solve.  If the a
 
 #include "stdafx.h"
 #include <iostream>
-#include "Primes.h"
 
 #include "Problem1.h"
 #include "Problem2.h"
@@ -63,9 +62,7 @@ int main()
 		answer = prob.Solve();
 	}
 	else if (probToSolve == 3){
-		Primes prob;
-		prob.primeList(100);
-
+		
 	}
 		
 	duration = (clock() - start) / (double) CLOCKS_PER_SEC;
