@@ -8,6 +8,7 @@ This will be the main "controller" of which program you want to solve.  If the a
 
 #include "Problem1.h"
 #include "Problem2.h"
+#include "Problem3.h"
 using namespace std;
 #include <cstdio>
 #include <ctime>
@@ -17,27 +18,6 @@ using namespace std;
 
 int main()
 {
-	vector<int> test;
-
-	for (int i = 1; i <= 10; i++) test.push_back(i);
-
-	for (int i = 2; i < test.size(); i++){
-
-
-		test.erase(test.begin() + i);
-	}
-
-
-
-	cout << "myvector contains:";
-	for (unsigned i = 0; i < test.size(); ++i)
-		cout << ' ' << test[i];
-	cout << '\n';
-
-
-
-
-
 	//create an int, get the input for it then find which problem it is for, create the object, do some initalization for the problem, then after the if we'll call prob.Solve() to solve the problem.
 	int answer = 0;
 
@@ -62,7 +42,8 @@ int main()
 		answer = prob.Solve();
 	}
 	else if (probToSolve == 3){
-		
+		Problem3 prob;
+		prob.factors(600851475143);
 	}
 		
 	duration = (clock() - start) / (double) CLOCKS_PER_SEC;
