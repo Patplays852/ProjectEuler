@@ -32,7 +32,8 @@ int main()
 	cout << "Please enter the number of the problem you'd like to solve(1 - n):";
 	int probToSolve;
 	cin >> probToSolve;
-	
+
+
 	clock_t start;
 	double duration;
 
@@ -55,7 +56,7 @@ int main()
 	else if (probToSolve == 4){
 		Problem4 prob;
 		answer = to_string(prob.Solve());
-		
+
 	}
 	else if (probToSolve == 5){
 		Problem5 prob;
@@ -91,11 +92,11 @@ int main()
 
 		answer = to_string(sum);
 	}
-		
-	duration = (clock() - start) / (double) CLOCKS_PER_SEC;
-	
 
-	
+	duration = (clock() - start) / (double) CLOCKS_PER_SEC;
+
+
+
 	//Display the answer to the selected problem.
 	cout << endl << answer << endl;
 	cout << "The problem took " << duration << " seconds to solve." << endl;

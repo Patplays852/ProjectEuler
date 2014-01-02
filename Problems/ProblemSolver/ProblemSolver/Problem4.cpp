@@ -37,7 +37,7 @@ int Problem4::Solve(){
 	for (int x = 999; x > 0; x--){
 		for (int y = 999; y > 0; y--){
 			int prod = x * y;
-			if (isPalindrome(to_string(prod)) && prod > ret){
+			if (prod > ret && isPalindrome(to_string(prod))){
 				ret = prod;
 			}
 		}
