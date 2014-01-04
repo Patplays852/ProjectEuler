@@ -43,7 +43,7 @@
 1388745572 c:\users\plochner\documents\github\projecteuler\problem solver\problem4.h
 	<string>
 
-1388827530 source:c:\users\plochner\documents\github\projecteuler\problem solver\problem5.cpp
+1388832146 source:c:\users\plochner\documents\github\projecteuler\problem solver\problem5.cpp
 	"Problem5.h"
 	<iostream>
 
@@ -54,9 +54,10 @@
 
 1388745573 c:\users\plochner\documents\github\projecteuler\problem solver\problem6.h
 
-1388745573 source:c:\users\plochner\documents\github\projecteuler\problem solver\problem8.cpp
+1388831484 source:c:\users\plochner\documents\github\projecteuler\problem solver\problem8.cpp
 	"Problem8.h"
 	<string>
+	<cstring>
 
 1388828856 c:\users\plochner\documents\github\projecteuler\problem solver\problem8.h
 
@@ -66,7 +67,7 @@
 
 1388745573 c:\users\plochner\documents\github\projecteuler\problem solver\problem9.h
 
-1388828615 source:c:\users\plochner\documents\github\projecteuler\problem solver\problemsolver.cpp
+1388832378 source:c:\users\plochner\documents\github\projecteuler\problem solver\problemsolver.cpp
 	<iostream>
 	"InfInt.h"
 	"Primes.h"

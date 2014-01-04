@@ -2,7 +2,6 @@
 
 This will be the main "controller" of which program you want to solve.  If the appropriate solution has been prepared, you can launch it via this application.
 */
-//Problems 5 and 8 are broke
 
 #include <iostream>
 
@@ -40,7 +39,7 @@ int main()
 	double duration;
 
 	start = clock();
-	//TODO:: Add errorcatching for bad input.
+	//TODO:: Add error catching for bad input.
 	if (probToSolve == 1){
 		Problem1 prob;
 		prob.setnum(1000);
