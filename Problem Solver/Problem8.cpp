@@ -22,26 +22,13 @@ int Problem8::Solve()
 
     for (int i = 0; i <= str.length() - 6; i++)
     {
-        string s1 = str.substr(i,1);
-        string s2 = str.substr(i + 1, 1);
-        string s3 = str.substr(i + 2, 1);
-        string s4 = str.substr(i + 3, 1);
-        string s5 = str.substr(i + 4, 1);
-
-        const char * c1 = s1.c_str();
-        const char * c2 = s2.c_str();
-        const char * c3 = s3.c_str();
-        const char * c4 = s4.c_str();
-        const char * c5 = s5.c_str();
-
-        int v1 = atoi(c1);
-        int v2 = atoi(c2);
-        int v3 = atoi(c3);
-        int v4 = atoi(c4);
-        int v5 = atoi(c5);
+        int v1 = atoi(str.substr(i,1).c_str());
+        int v2 = atoi(str.substr(i + 1,1).c_str());
+        int v3 = atoi(str.substr(i + 2,1).c_str());
+        int v4 = atoi(str.substr(i + 3,1).c_str());
+        int v5 = atoi(str.substr(i + 4,1).c_str());
 
         int temp = v1 * v2 * v3 * v4 * v5;
-
 
         if (temp > product)
         {
