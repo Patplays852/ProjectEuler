@@ -4,6 +4,6 @@ class Problem8
 public:
 	Problem8();
 	virtual ~Problem8();
-	long long Solve();
+	int Solve();
 };
 

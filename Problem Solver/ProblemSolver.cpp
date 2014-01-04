@@ -2,7 +2,7 @@
 
 This will be the main "controller" of which program you want to solve.  If the appropriate solution has been prepared, you can launch it via this application.
 */
-
+//Problems 5 and 8 are broke
 
 #include <iostream>
 
@@ -23,8 +23,7 @@ using namespace std;
 #include <vector>
 
 
-
-long long main()
+int main()
 {
     again:
 	//create an long long, get the input for it then find which problem it is for, create the object, do some initialization for the problem, then after the if we'll call prob.Solve() to solve the problem.
