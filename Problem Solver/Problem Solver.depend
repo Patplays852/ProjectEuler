@@ -92,3 +92,106 @@
 	<stdlib.h>
 	<exception>
 
+1388837409 source:c:\users\plochner\documents\github\projecteuler\problem solver\src\primes.cpp
+	"Primes.h"
+	<vector>
+	<iostream>
+	<cmath>
+
+1388837409 c:\users\plochner\documents\github\projecteuler\problem solver\include\primes.h
+	<vector>
+
+1388989594 source:c:\users\plochner\documents\github\projecteuler\problem solver\src\problem1.cpp
+	"Problem1.h"
+	<vector>
+
+1388837410 c:\users\plochner\documents\github\projecteuler\problem solver\include\problem1.h
+
+1388904473 source:c:\users\plochner\documents\github\projecteuler\problem solver\src\problem11.cpp
+	"Problem11.h"
+	<iostream>
+
+1388899287 c:\users\plochner\documents\github\projecteuler\problem solver\include\problem11.h
+
+1388837410 source:c:\users\plochner\documents\github\projecteuler\problem solver\src\problem2.cpp
+	"Problem2.h"
+
+1388837410 c:\users\plochner\documents\github\projecteuler\problem solver\include\problem2.h
+
+1388837410 source:c:\users\plochner\documents\github\projecteuler\problem solver\src\problem3.cpp
+	"Problem3.h"
+	<iostream>
+	"Primes.h"
+	<string>
+
+1388837410 c:\users\plochner\documents\github\projecteuler\problem solver\include\problem3.h
+	<vector>
+
+1388837410 source:c:\users\plochner\documents\github\projecteuler\problem solver\src\problem4.cpp
+	"Problem4.h"
+	<algorithm>
+	<string>
+	<sstream>
+
+1388837410 c:\users\plochner\documents\github\projecteuler\problem solver\include\problem4.h
+	<string>
+
+1388837410 source:c:\users\plochner\documents\github\projecteuler\problem solver\src\problem5.cpp
+	"Problem5.h"
+
+1388837410 c:\users\plochner\documents\github\projecteuler\problem solver\include\problem5.h
+
+1388837410 source:c:\users\plochner\documents\github\projecteuler\problem solver\src\problem6.cpp
+	"Problem6.h"
+
+1388837410 c:\users\plochner\documents\github\projecteuler\problem solver\include\problem6.h
+
+1388837614 source:c:\users\plochner\documents\github\projecteuler\problem solver\src\problem8.cpp
+	"Problem8.h"
+	<string>
+	<cstring>
+
+1388837410 c:\users\plochner\documents\github\projecteuler\problem solver\include\problem8.h
+
+1388837410 source:c:\users\plochner\documents\github\projecteuler\problem solver\src\problem9.cpp
+	"Problem9.h"
+	<iostream>
+
+1388837410 c:\users\plochner\documents\github\projecteuler\problem solver\include\problem9.h
+
+1388915451 source:c:\users\plochner\documents\github\projecteuler\problem solver\src\problemsolver.cpp
+	<iostream>
+	"InfInt.h"
+	"Primes.h"
+	"Problem1.h"
+	"Problem2.h"
+	"Problem3.h"
+	"Problem4.h"
+	"Problem5.h"
+	"Problem6.h"
+	"Problem8.h"
+	"Problem9.h"
+	"Problem11.h"
+	"Problem12.h"
+	<cstdio>
+	<ctime>
+	<vector>
+
+1388894619 c:\users\plochner\documents\github\projecteuler\problem solver\include\infint.h
+	<iostream>
+	<vector>
+	<sstream>
+	<iomanip>
+	<limits.h>
+	<stdlib.h>
+	<exception>
+
+1388991519 source:c:\users\plochner\documents\github\projecteuler\problem solver\src\problem12.cpp
+	"Problem12.h"
+	"Primes.h"
+	<vector>
+	<iostream>
+	<iomanip>
+
+1388995380 c:\users\plochner\documents\github\projecteuler\problem solver\include\problem12.h
+

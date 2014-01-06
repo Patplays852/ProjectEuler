@@ -41,4 +41,4 @@ long long Problem1::Solve(){
 	}
 
 	return sum;
-};
+}
