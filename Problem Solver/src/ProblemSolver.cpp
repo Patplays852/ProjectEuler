@@ -7,17 +7,9 @@ This will be the main "controller" of which program you want to solve.  If the a
 
 #include "InfInt.h"
 #include "Primes.h"
-#include "Problem1.h"
-#include "Problem2.h"
-#include "Problem3.h"
-#include "Problem4.h"
-#include "Problem5.h"
-#include "Problem6.h"
-#include "Problem8.h"
-#include "Problem9.h"
-#include "Problem11.h"
-#include "Problem12.h"
-#include "Problem13.h"
+#include "Problems.h"
+
+
 using namespace std;
 #include <cstdio>
 #include <ctime>
@@ -105,6 +97,14 @@ int main()
 	else if(probToSolve == 13){
         Problem13 prob;
         answer = prob.Solve();
+	}
+	else if(probToSolve == 14){
+        Problem14 prob;
+        answer = to_string(prob.Solve());
+	}
+	else if(probToSolve == 15){
+        Problem15 prob;
+        answer = to_string(prob.Solve(20));
 	}
 
 	duration = (clock() - start) / (double) CLOCKS_PER_SEC;
