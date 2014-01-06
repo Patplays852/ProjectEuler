@@ -17,6 +17,7 @@ This will be the main "controller" of which program you want to solve.  If the a
 #include "Problem9.h"
 #include "Problem11.h"
 #include "Problem12.h"
+#include "Problem13.h"
 using namespace std;
 #include <cstdio>
 #include <ctime>
@@ -100,6 +101,10 @@ int main()
 	else if (probToSolve == 12){
         Problem12 prob;
         answer = to_string(prob.Solve());
+	}
+	else if(probToSolve == 13){
+        Problem13 prob;
+        answer = prob.Solve();
 	}
 
 	duration = (clock() - start) / (double) CLOCKS_PER_SEC;

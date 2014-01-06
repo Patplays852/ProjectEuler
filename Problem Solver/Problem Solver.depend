@@ -159,7 +159,7 @@
 
 1388837410 c:\users\plochner\documents\github\projecteuler\problem solver\include\problem9.h
 
-1388915451 source:c:\users\plochner\documents\github\projecteuler\problem solver\src\problemsolver.cpp
+1388996274 source:c:\users\plochner\documents\github\projecteuler\problem solver\src\problemsolver.cpp
 	<iostream>
 	"InfInt.h"
 	"Primes.h"
@@ -173,11 +173,12 @@
 	"Problem9.h"
 	"Problem11.h"
 	"Problem12.h"
+	"Problem13.h"
 	<cstdio>
 	<ctime>
 	<vector>
 
-1388894619 c:\users\plochner\documents\github\projecteuler\problem solver\include\infint.h
+1388996784 c:\users\plochner\documents\github\projecteuler\problem solver\include\infint.h
 	<iostream>
 	<vector>
 	<sstream>
@@ -186,12 +187,22 @@
 	<stdlib.h>
 	<exception>
 
-1388991519 source:c:\users\plochner\documents\github\projecteuler\problem solver\src\problem12.cpp
+1388995380 source:c:\users\plochner\documents\github\projecteuler\problem solver\src\problem12.cpp
 	"Problem12.h"
 	"Primes.h"
 	<vector>
+	<array>
 	<iostream>
 	<iomanip>
+	<math.h>
 
 1388995380 c:\users\plochner\documents\github\projecteuler\problem solver\include\problem12.h
+
+1388997121 source:c:\users\plochner\documents\github\projecteuler\problem solver\src\problem13.cpp
+	"Problem13.h"
+	"InfInt.h"
+	<iostream>
+
+1388996764 c:\users\plochner\documents\github\projecteuler\problem solver\include\problem13.h
+	<string>
 
