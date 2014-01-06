@@ -14,6 +14,8 @@ using namespace std;
 #include <cstdio>
 #include <ctime>
 #include <vector>
+#include <string>
+
 
 
 int main()
@@ -105,6 +107,18 @@ int main()
 	else if(probToSolve == 15){
         Problem15 prob;
         answer = to_string(prob.Solve(20));
+	}
+	else if(probToSolve == 16){
+        InfInt x = 2;
+        for (int i = 2; i <= 1000; i++){
+            x = x * 2;
+        }
+
+        unsigned int sum;
+        for(int i = 0; i <= x.toString().length() - 1; i++){
+            sum += atoi(x.toString().substr(i,1).c_str());
+        }
+        answer = to_string(sum);
 	}
 
 	duration = (clock() - start) / (double) CLOCKS_PER_SEC;
