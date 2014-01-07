@@ -120,6 +120,27 @@ int main()
         }
         answer = to_string(sum);
 	}
+	else if (probToSolve == 20){
+        InfInt ex = 1;
+        for (int i = 99; i > 1; i--){
+            ex = ex * i;
+        }
+
+        int a;
+        for (int i = 0; i < ex.toString().length(); i++){
+            a += atoi(ex.toString().substr(i,1).c_str());
+        }
+
+        answer = to_string(a);
+
+	}
+	else if(probToSolve == 25){
+        Problem25 prob;
+        answer = to_string(prob.Solve());
+	}
+
+
+
 
 	duration = (clock() - start) / (double) CLOCKS_PER_SEC;
 
