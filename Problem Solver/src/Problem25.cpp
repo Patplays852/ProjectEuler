@@ -1,5 +1,8 @@
 #include "Problem25.h"
 #include "InfInt.h"
+#include <string>
+
+using namespace std;
 
 Problem25::Problem25()
 {
@@ -12,7 +15,8 @@ Problem25::~Problem25()
 }
 
 
-unsigned long long Problem25::Solve(){
+//unsigned long long Problem25::Solve(){
+string Problem25::Solve(){
 
     unsigned long long fibTerm = 2;
     InfInt fib1 = 1;
@@ -27,5 +31,5 @@ unsigned long long Problem25::Solve(){
 		fibTerm = fibTerm + 1;
 	} while (fib3.toString().length() < 1000);
 
-    return fibTerm;
+    return to_string(fibTerm);
 }

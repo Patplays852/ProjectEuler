@@ -1,11 +1,15 @@
 #pragma once
+#include "SolvedProblems.h"
 
-class Problem25
+#include <string>
+
+class Problem25 : public SolvedProblems
 {
     public:
         Problem25();
         virtual ~Problem25();
-        unsigned long long Solve();
+        //unsigned long long Solve();
+        std::string Solve() override;
     protected:
     private:
 };

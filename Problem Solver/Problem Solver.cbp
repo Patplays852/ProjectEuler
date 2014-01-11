@@ -50,6 +50,7 @@
 		<Unit filename="include/Problem8.h" />
 		<Unit filename="include/Problem9.h" />
 		<Unit filename="include/Problems.h" />
+		<Unit filename="include/SolvedProblems.h" />
 		<Unit filename="src/Primes.cpp" />
 		<Unit filename="src/Problem1.cpp" />
 		<Unit filename="src/Problem11.cpp" />
@@ -66,6 +67,7 @@
 		<Unit filename="src/Problem8.cpp" />
 		<Unit filename="src/Problem9.cpp" />
 		<Unit filename="src/ProblemSolver.cpp" />
+		<Unit filename="src/SolvedProblems.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

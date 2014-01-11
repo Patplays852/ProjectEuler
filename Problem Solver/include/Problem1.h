@@ -1,11 +1,14 @@
 #pragma once
-class Problem1
+#include "SolvedProblems.h"
+
+
+class Problem1 : public SolvedProblems
 {
 public:
 	Problem1();
 	virtual ~Problem1();
 	long long num;
 	long long setnum(long long);
-	long long Solve();
+	string Solve() override; //long long Solve();
 };
 

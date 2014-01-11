@@ -8,6 +8,7 @@ This will be the main "controller" of which program you want to solve.  If the a
 #include "InfInt.h"
 #include "Primes.h"
 #include "Problems.h"
+#include "SolvedProblems.h"
 
 
 using namespace std;
@@ -31,6 +32,31 @@ int main()
 
 
 
+	vector<SolvedProblems*> probs = {new Problem1(), new Problem25()};
+
+	cout << probs.at(0) -> Solve() << endl;
+	cout << probs.at(1) -> Solve() << endl;
+
+/*
+	//create a vector that will hold all the classes of the problems;
+	vector<SolvedProblems*> probs;// = (0, Problem1(), Problem2(), Problem3(), Problem4());
+	//probs.push_back(0);
+	probs.push_back(new Problem1());
+	probs.push_back(new Problem1());
+	probs.push_back(new Problem1());
+	probs.push_back(new Problem25());
+	int problemmm = 25;
+
+	probs.push_back(new Problem[problemmm]());
+
+
+	for (int i = 1; i < probs.size(); i++){
+        cout << "The answer to problem " << i << " is " << probs.at(i) -> Solve() << endl;
+	}
+
+*/
+
+
 	clock_t start;
 	double duration;
 
@@ -39,7 +65,7 @@ int main()
 	if (probToSolve == 1){
 		Problem1 prob;
 		prob.setnum(1000);
-		answer = to_string(prob.Solve());
+		answer = prob.Solve();
 	}
 	else if (probToSolve == 2){
 		Problem2 prob;
@@ -136,7 +162,11 @@ int main()
 	}
 	else if(probToSolve == 25){
         Problem25 prob;
-        answer = to_string(prob.Solve());
+        answer = prob.Solve(); //to_string(prob.Solve());
+        ////vector<SolvedProblems*> x;
+        ////x.push_back(new Problem25());
+        //answer = x.at(0) -> Solve();
+        //cout << "your answer is:  " << x.at(0) -> Solve();
 	}
 
 
