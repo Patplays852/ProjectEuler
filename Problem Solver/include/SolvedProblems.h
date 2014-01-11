@@ -1,15 +1,11 @@
 #pragma once
-#include <string>
-
-using namespace std;
-
 
 class SolvedProblems
 {
     public:
         SolvedProblems();
         virtual ~SolvedProblems();
-        virtual string Solve();
+        virtual void Solve();
     protected:
     private:
 };

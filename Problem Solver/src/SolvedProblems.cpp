@@ -13,7 +13,5 @@ SolvedProblems::~SolvedProblems()
     //dtor
 }
 
-string SolvedProblems::Solve(){
-
-    return "";
+void SolvedProblems::Solve(){
 }
