@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace ProblemSolver.src
 {
-    class Unsolved : SolvedProblems
+    class Problem021 : SolvedProblems
     {
-        public override void Solve() { Console.WriteLine("This problem hasn't been solved yet."); }
+        public override void Solve()
+        {
+            base.Solve();
+        }
     }
 }

@@ -44,10 +44,29 @@
   <ItemGroup>
     <Compile Include="src\EulerHelper.cs" />
     <Compile Include="src\Primes.cs" />
+    <Compile Include="src\Problem001.cs" />
+    <Compile Include="src\Problem002.cs" />
+    <Compile Include="src\Problem003.cs" />
+    <Compile Include="src\Problem004.cs" />
+    <Compile Include="src\Problem005.cs" />
+    <Compile Include="src\Problem006.cs" />
+    <Compile Include="src\Problem007.cs" />
+    <Compile Include="src\Problem008.cs" />
+    <Compile Include="src\Problem009.cs" />
+    <Compile Include="src\Problem010.cs" />
+    <Compile Include="src\Problem011.cs" />
+    <Compile Include="src\Problem012.cs" />
+    <Compile Include="src\Problem013.cs" />
+    <Compile Include="src\Problem014.cs" />
+    <Compile Include="src\Problem015.cs" />
+    <Compile Include="src\Problem016.cs" />
+    <Compile Include="src\Problem020.cs" />
+    <Compile Include="src\Problem021.cs" />
+    <Compile Include="src\Problem025.cs" />
     <Compile Include="src\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\SolvedProblems.cs" />
-    <Compile Include="src\Unsolved.cs" />
+    <Compile Include="src\Problem000.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

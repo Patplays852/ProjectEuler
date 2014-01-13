@@ -9,6 +9,14 @@ namespace ProblemSolver.src
 {
     static class EulerHelper
     {
+
+        public static void printAns(string ans)
+        {
+            Console.WriteLine();
+            Console.WriteLine(ans);
+            Console.WriteLine();
+        }
+
         public static string reverseString(string s)
         {
             char[] arr = s.ToCharArray();
@@ -59,13 +67,61 @@ namespace ProblemSolver.src
             throw new ArithmeticException("NaN");
         }
 
-        private static Boolean isSqrt(BigInteger n, BigInteger root)
+
+        public static Boolean isSqrt(BigInteger n, BigInteger root)
         {
             BigInteger lowerBound = root * root;
             BigInteger upperBound = (root + 1) * (root + 1);
 
             return (n >= lowerBound && n < upperBound);
         }
+
+
+        public static List<BigInteger> factors(BigInteger num)
+        {
+            List<BigInteger> x = new List<BigInteger>();
+
+            for (BigInteger i = 2; num != 1; i++)
+            {
+                if (num % i == 0 && Primes.isPrime(i.ToString()))
+                {
+                    x.Add(i);
+                    num /= i;
+                }
+            }
+            return x;
+        }
+
+
+        public static List<BigInteger> properDivisors(BigInteger x)
+        {
+            List<BigInteger> divs = new List<BigInteger>();
+
+            for (BigInteger i = 1; i < x; i++)
+            {
+                if (x % i == 0)
+                {
+                    divs.Add(i);
+                }
+            }
+            return divs;
+        }
+
+
+        public static BigInteger max(List<BigInteger> x)
+        {
+            BigInteger max = 0;
+
+            foreach (int i in x)
+            {
+                if (i > max)
+                {
+                    max = i;
+                }
+            }
+            return max;
+        }
+
 
     }
 }

@@ -16,7 +16,6 @@ namespace ProblemSolver.src
             //use first method for any numbers that are less than ulong (faster/more accurate to use Math.Sqrt() than it is to use custom sqrt method for BigIntegers.
             if (x < ulong.MaxValue)
             {
-                Console.WriteLine(((ulong)x).ToString());
                 for (ulong i = 2; i <= Math.Sqrt((ulong)x); i++)
                 {
                     if (x % i == 0)
