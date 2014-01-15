@@ -47,6 +47,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="src\BaseConverter.cs" />
     <Compile Include="src\EulerHelper.cs" />
     <Compile Include="src\Primes.cs" />
     <Compile Include="src\Problem001.cs" />
@@ -70,6 +71,7 @@
     <Compile Include="src\Problem022.cs" />
     <Compile Include="src\Problem025.cs" />
     <Compile Include="src\Problem029.cs" />
+    <Compile Include="src\Problem036.cs" />
     <Compile Include="src\Problem048.cs" />
     <Compile Include="src\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
