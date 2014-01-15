@@ -49,7 +49,7 @@ namespace ProblemSolver.src
 
         public static BigInteger Sqrt(this BigInteger n)
         {
-            if (n == 0) return 0;
+            if (n <= 0) return 0;
             if (n > 0)
             {
                 int bitLength = Convert.ToInt32(Math.Ceiling(BigInteger.Log(n, 2)));
