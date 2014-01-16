@@ -136,5 +136,23 @@ namespace ProblemSolver.src
         }
 
 
+        public static List<string> rotations(string str)
+        {
+            List<string> rtn = new List<string>();
+            int i = str.Length;
+            string n = str;
+
+            while (i > 0)
+            {
+                n = n.Substring(str.Length - 1, 1) + n.Substring(0, str.Length - 1);
+                rtn.Add(n);
+                i--;
+            }
+            return rtn;
+        }
+
+
+
+
     }
 }
