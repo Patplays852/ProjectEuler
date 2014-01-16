@@ -126,6 +126,7 @@ namespace ProblemSolver.src
 
         public static BigInteger factorial(BigInteger x)
         {
+            if (x == 0) { return 0; }
             BigInteger rtn = 1;
             for (BigInteger i = x; i > 1; i--)
             {
