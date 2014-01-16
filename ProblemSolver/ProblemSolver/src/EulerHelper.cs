@@ -17,6 +17,7 @@ namespace ProblemSolver.src
             Console.WriteLine();
         }
 
+
         public static string reverseString(string s)
         {
             char[] arr = s.ToCharArray();
@@ -120,6 +121,17 @@ namespace ProblemSolver.src
                 }
             }
             return max;
+        }
+
+
+        public static BigInteger factorial(BigInteger x)
+        {
+            BigInteger rtn = 1;
+            for (BigInteger i = x; i > 1; i--)
+            {
+                rtn *= i;
+            }
+            return rtn;
         }
 
 
