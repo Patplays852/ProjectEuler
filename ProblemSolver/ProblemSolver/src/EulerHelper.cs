@@ -10,6 +10,16 @@ namespace ProblemSolver.src
     static class EulerHelper
     {
 
+        public static int alphaValue(string str)
+        {
+            int result = 0;
+            for (int i = 0; i < str.Length; i++)
+            {
+                result += Convert.ToInt32(str[i]) - 64;
+            }
+            return result;
+        }
+
         public static void printAns(string ans)
         {
             Console.WriteLine();
@@ -152,7 +162,21 @@ namespace ProblemSolver.src
         }
 
 
+        public static BigInteger triangleTerm(uint n){
+            return (BigInteger)(.5*n*(n+1));
+        }
 
+
+        public static Dictionary<BigInteger,BigInteger> triangleNums(BigInteger maxTri)
+        {
+            uint counter = 1;
+            Dictionary<BigInteger, BigInteger> rtn = new Dictionary<BigInteger, BigInteger>();
+            while (counter < maxTri)
+            {
+                rtn.Add(counter, triangleTerm(counter));
+            }
+            return rtn;
+        }
 
     }
 }

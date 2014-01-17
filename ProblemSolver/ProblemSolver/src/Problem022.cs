@@ -20,16 +20,6 @@ namespace ProblemSolver.src
 {
     class Problem022 : SolvedProblems
     {
-        private int nameValue(string str)
-        {
-            int result = 0;
-            for (int i = 0; i < str.Length; i++)
-            {
-                result += Convert.ToInt32(str[i]) - 64;
-            }
-            return result;
-        }
-
         public override void Solve()
         {
             string str = Properties.Resources.Problem022;
@@ -46,7 +36,7 @@ namespace ProblemSolver.src
             uint sum = 0;
             for (int i = 0; i < names.Length; i++)
             {
-                sum += (uint)((i + 1) * nameValue(names[i].ToString()));
+                sum += (uint)((i + 1) * EulerHelper.alphaValue(names[i].ToString()));
             }
 
             EulerHelper.printAns(sum.ToString());
