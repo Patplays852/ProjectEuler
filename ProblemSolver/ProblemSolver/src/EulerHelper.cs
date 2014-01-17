@@ -162,12 +162,13 @@ namespace ProblemSolver.src
         }
 
 
-        public static BigInteger triangleTerm(uint n){
-            return (BigInteger)(.5*n*(n+1));
+        public static BigInteger triangleTerm(uint n)
+        {
+            return (BigInteger)(.5 * n * (n + 1));
         }
 
 
-        public static Dictionary<BigInteger,BigInteger> triangleNums(BigInteger maxTri)
+        public static Dictionary<BigInteger, BigInteger> triangleNums(BigInteger maxTri)
         {
             uint counter = 1;
             Dictionary<BigInteger, BigInteger> rtn = new Dictionary<BigInteger, BigInteger>();
@@ -178,6 +179,47 @@ namespace ProblemSolver.src
             }
             return rtn;
         }
+
+
+        public static BigInteger PentagonalTerm(uint n){
+            return (BigInteger)(n * (3 * n - 1) / 2);
+        }
+
+
+        public static Dictionary<BigInteger,BigInteger> pentagonalNums(BigInteger maxTri)
+        {
+            uint counter = 1;
+            Dictionary<BigInteger, BigInteger> rtn = new Dictionary<BigInteger, BigInteger>();
+            while (counter <= maxTri)
+            {
+                rtn.Add(counter, PentagonalTerm(counter));
+                counter++;
+            }
+            return rtn;
+        }
+
+        
+
+        public static BigInteger hexagonalTerm(uint n)
+        {
+            return (BigInteger)(n * (2 * n - 1));
+        }
+
+
+        public static Dictionary<BigInteger, BigInteger> hexagonalNums(BigInteger maxTri)
+        {
+            uint counter = 1;
+            Dictionary<BigInteger, BigInteger> rtn = new Dictionary<BigInteger, BigInteger>();
+            while (counter <= maxTri)
+            {
+                rtn.Add(counter, hexagonalTerm(counter));
+                counter++;
+            }
+            return rtn;
+        }
+
+
+
 
     }
 }
