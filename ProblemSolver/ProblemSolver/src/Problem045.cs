@@ -29,8 +29,6 @@ namespace ProblemSolver.src
             BigInteger triNum = 0;
             BigInteger counter = 286;
 
-            Console.WriteLine(triangles.Count.ToString());
-
             while (triNum == 0)
             {
                 if (counter > triangles.Count)
