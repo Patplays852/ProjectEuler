@@ -27,16 +27,11 @@ namespace ProblemSolver.src
             Array.Sort(names); //sort names into alphabetical order
 
             //get rid of the quotation marks.
-            for (int i = 0; i < names.Length; i++)
-            {
-                names[i] = names[i].Trim('"');
-            }
-
-            //sum up the values:
             uint sum = 0;
             for (int i = 0; i < names.Length; i++)
             {
-                sum += (uint)((i + 1) * EulerHelper.alphaValue(names[i].ToString()));
+                names[i] = names[i].Trim('"');
+                sum += (uint)((i + 1) * EulerHelper.alphaValue(names[i].ToString()));//sum up the values:
             }
 
             EulerHelper.printAns(sum.ToString());

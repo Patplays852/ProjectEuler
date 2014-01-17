@@ -28,7 +28,7 @@ namespace ProblemSolver.src
 {
     class Problem012 : SolvedProblems
     {
-        public override void Solve()
+        public override void Solve() //3.082s
         {
             ulong tri = 0;
             int numOfDivisors = 1;

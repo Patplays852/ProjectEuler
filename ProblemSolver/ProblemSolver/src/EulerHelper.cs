@@ -171,9 +171,10 @@ namespace ProblemSolver.src
         {
             uint counter = 1;
             Dictionary<BigInteger, BigInteger> rtn = new Dictionary<BigInteger, BigInteger>();
-            while (counter < maxTri)
+            while (counter <= maxTri)
             {
                 rtn.Add(counter, triangleTerm(counter));
+                counter++;
             }
             return rtn;
         }
