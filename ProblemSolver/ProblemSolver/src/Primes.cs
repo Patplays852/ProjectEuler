@@ -93,19 +93,21 @@ namespace ProblemSolver.src
             return sieve;
         }
 
-        static public List<BigInteger> primeList(BigInteger num)
+        static public Dictionary<BigInteger,BigInteger> primeList(BigInteger num)
         {
             Dictionary<BigInteger, bool> bitPrimes = sieveOfEratosthenes(num);  //calls the sieve and gets back a value of primes where 1 is prime, 0 is not prime in a bool dictionary where index indicates the number that is or is not a prime, so index 2 would have a value of 1 indicating it is a prime, whereas index 4 would have a value of 0 meaning it's not a prime.
 
             //we will now convert the bits into usable numbers -- will create a list where the primes are in order (index 0 is 2, index 1 is 3, index 2 is 5 etc.)
-            List<BigInteger> x = new List<BigInteger>();
-
+            Dictionary<BigInteger, BigInteger> x = new Dictionary<BigInteger, BigInteger>();
+            BigInteger counter = 1;
             foreach (KeyValuePair<BigInteger, bool> pair in bitPrimes)
             {
                 if (pair.Value)
                 {
-                    x.Add(pair.Key);
+                    x.Add(counter,pair.Key);
+                    counter++;
                 }
+                
             }
 
             return x;

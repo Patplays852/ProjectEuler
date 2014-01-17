@@ -21,22 +21,17 @@ namespace ProblemSolver.src
         public override void Solve()
         {
             uint counter = 0;
-            List<BigInteger> pl = Primes.primeList(1000000);
-            Dictionary<BigInteger,bool> plist= new Dictionary<BigInteger,bool>();
+            Dictionary<BigInteger, BigInteger> pl = Primes.primeList(1000000);
+            
 
-            foreach (BigInteger i in pl)
+            foreach (KeyValuePair<BigInteger,BigInteger> prime in pl)
             {
-                plist.Add(i, false);
-            }
-
-            foreach (BigInteger prime in pl)
-            {
-                List<string> rot = EulerHelper.rotations(prime.ToString());
+                List<string> rot = EulerHelper.rotations(prime.Value.ToString());
                 uint internalcount = (uint)rot.Count();
                 foreach (string rotation in rot)
                 {
                    
-                    if (plist.ContainsKey(BigInteger.Parse(rotation)))
+                    if (pl.ContainsValue(BigInteger.Parse(rotation)))
                     {
                         internalcount--;
                     }

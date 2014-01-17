@@ -18,9 +18,9 @@ namespace ProblemSolver.src
     {
         public override void Solve()
         {
-            List<BigInteger> p = Primes.primeList(BigInteger.Parse("1000000"));
+            Dictionary<BigInteger, BigInteger> p = Primes.primeList(BigInteger.Parse("105000"));
 
-            EulerHelper.printAns(p[10000].ToString());
+            EulerHelper.printAns(p[10001].ToString());
         }
     }
 }

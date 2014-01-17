@@ -17,10 +17,10 @@ namespace ProblemSolver.src
     {
         public override void Solve()
         {
-            List<BigInteger> plist = Primes.primeList(BigInteger.Parse("2000000"));
+            Dictionary<BigInteger, BigInteger> plist = Primes.primeList(BigInteger.Parse("2000000"));
             ulong sum = 0;
 
-            for (int i = 0; i < plist.Count; i++)
+            for (int i = 1; i < plist.Count; i++)
             {
                 sum += (ulong)plist[i];
             }

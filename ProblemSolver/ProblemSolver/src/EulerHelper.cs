@@ -10,6 +10,36 @@ namespace ProblemSolver.src
     static class EulerHelper
     {
 
+        public static bool isPandigital(string str)
+        {
+            char[] chararr = str.ToCharArray();
+            Dictionary<char, bool> chars = new Dictionary<char, bool>(){
+                {'0', false},
+                {'1', false},
+                {'2', false},
+                {'3', false},
+                {'4', false},
+                {'5', false},
+                {'6', false},
+                {'7', false},
+                {'8', false},
+                {'9', false},
+            };
+
+            foreach (char i in chararr)
+            {
+                if (chars[i] == true)
+                {
+                    return false;
+                }
+                else
+                {
+                    chars[i] = true;
+                }
+            }
+            return true;
+        }
+
         public static int alphaValue(string str)
         {
             int result = 0;
