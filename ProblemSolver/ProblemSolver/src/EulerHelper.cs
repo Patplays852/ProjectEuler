@@ -118,7 +118,7 @@ namespace ProblemSolver.src
         }
 
 
-        public static List<BigInteger> factors(BigInteger num)
+        public static List<BigInteger> primeFactors(BigInteger num)
         {
             List<BigInteger> x = new List<BigInteger>();
 
@@ -138,7 +138,7 @@ namespace ProblemSolver.src
         {
             List<BigInteger> divs = new List<BigInteger>();
 
-            for (BigInteger i = 1; i < x; i++)
+            for (BigInteger i = 1; i <= x; i++)
             {
                 if (x % i == 0)
                 {

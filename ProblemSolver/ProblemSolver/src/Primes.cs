@@ -11,12 +11,11 @@ namespace ProblemSolver.src
         static public bool isPrime(string str)
         {
             BigInteger x = BigInteger.Parse(str);
-
             
             //use first method for any numbers that are less than ulong (faster/more accurate to use Math.Sqrt() than it is to use custom sqrt method for BigIntegers.
             if (x < ulong.MaxValue)
             {
-                for (ulong i = 2; i <= Math.Ceiling(Math.Sqrt((ulong)x)); i++)
+                for (ulong i = 2; i <= Math.Ceiling(Math.Sqrt((ulong)x)) + 1; i++)
                 {
                     if (x % i == 0)
                     {
@@ -27,7 +26,7 @@ namespace ProblemSolver.src
             }
             
             //if it's larger than an unsigned long, then we'll use the biginteger version
-            for (BigInteger i = 2; i <= EulerHelper.Sqrt(x); i++)
+            for (BigInteger i = 2; i <= EulerHelper.Sqrt(x) + 1; i++)
             {
                 if (x % i == 0)
                 {

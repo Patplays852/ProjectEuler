@@ -17,10 +17,10 @@ namespace ProblemSolver.src
     class Problem003 : SolvedProblems
     {
         public override void Solve(){
-            List<BigInteger> x = EulerHelper.factors(BigInteger.Parse("600851475143"));
+            List<BigInteger> x = EulerHelper.primeFactors(BigInteger.Parse("600851475143"));
 
             Console.WriteLine();
-            Console.WriteLine("Your factors are:");
+            Console.WriteLine("The Prime factors are:");
         
             foreach(BigInteger i in x){
             Console.Write(i + " ");
