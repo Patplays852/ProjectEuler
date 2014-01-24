@@ -22,12 +22,14 @@ namespace ProblemSolver.src
     {
         public override void Solve()
         {
-            string str = "";
+            StringBuilder strx = new StringBuilder();
             int i = 1;
             do{
-                str += i.ToString();
+                strx.Append(i);
                 i++;
-            }while(str.Length < 1000000);
+            }while(strx.Length < 1000000);
+
+            string str = strx.ToString();
 
             int prod = Convert.ToInt32(str.Substring(0, 1)) *
                 Convert.ToInt32(str.Substring(9, 1)) *
