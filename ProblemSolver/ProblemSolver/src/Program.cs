@@ -46,11 +46,12 @@ namespace ProblemSolver.src
                     probToSolve = Convert.ToInt32(Console.ReadLine());
                     Stopwatch stopWatch = new Stopwatch();
                     stopWatch.Start();
-            
+
+                    Console.Clear();
                     probs[probToSolve].Solve(); //solve for the selected function
 
                     stopWatch.Stop();
-                    Console.WriteLine(String.Format("This problem was solved in:  {0}", stopWatch.Elapsed));
+                    Console.WriteLine(String.Format("Problem {0} was solved in:  {1}",probToSolve.ToString(), stopWatch.Elapsed));
                 }
                 catch {
                     Console.Clear();
